@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
+
+<!--    <androidx.fragment.app.FragmentContainerView-->
+<!--        android:id="@+id/fragment_1"-->
+<!--        android:name="com.example.fragmentdemo.fragment.AFragment"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="1" />-->
+
+<!--    <androidx.fragment.app.FragmentContainerView-->
+<!--        android:id="@+id/fragment_2"-->
+<!--        android:name="com.example.fragmentdemo.fragment.BFragment"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="1" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#673AB7"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="A" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="B" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="C" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/bottomNav"
+            android:layout_width="wrap_content"
+            android:layout_height="66dp"
+            android:layout_gravity="bottom|center|right|center_horizontal|center_vertical|end"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="70dp"
+            android:clickable="true"
+            android:contentDescription="@string/tab"
+            app:srcCompat="@drawable/baseline_navigation_24" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/Tab2"
+            android:layout_width="wrap_content"
+            android:layout_height="66dp"
+            android:layout_gravity="bottom|center|right|center_horizontal|center_vertical|end"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:contentDescription="@string/tab"
+            app:srcCompat="@drawable/baseline_keyboard_tab_24" />
+    </FrameLayout>
+
+</LinearLayout>
