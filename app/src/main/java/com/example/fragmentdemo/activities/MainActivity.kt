@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         val C:Button = findViewById(R.id.button3)
         val tabLayout:FloatingActionButton=findViewById(R.id.Tab2)
         val bottomNav:FloatingActionButton=findViewById(R.id.bottomNav)
+        val drawlayout:FloatingActionButton=findViewById(R.id.Drawer)
         loafFragment(BFragment(),0)
         A.setOnClickListener() {
             loafFragment(AFragment(),1)
@@ -39,6 +40,10 @@ class MainActivity : AppCompatActivity() {
         bottomNav.setOnClickListener{
             val intentt=Intent(this, MainActivity3::class.java)
             startActivity(intentt)
+        }
+        drawlayout.setOnClickListener{
+            val intt=Intent(this,MainActivity4::class.java)
+            startActivity(intt)
         }
     }
     private fun loafFragment(fragment: Fragment,flag:Int){
